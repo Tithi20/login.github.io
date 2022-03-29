@@ -1,0 +1,30 @@
+.body1 {
+  background-color: rgb(134, 192, 175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150vh;
+  padding: 0 16px;
+}
+
+#required {
+  color: red;
+}
+.btn-submit {
+  padding: 12px 0;
+  display: block;
+  width: 100%;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-weight: 500;
+  background-color: rgb(110, 29, 100);
+  margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+  background:  rgb(146, 48, 135);;
+}
+
