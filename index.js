@@ -20,9 +20,29 @@ registerPassword.addEventListener("input", function () {
 
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
+const tenth = document.querySelector("#tenth");
+const form_id = document.querySelector("#form_id");
 function validate() {
   if (email.value == "" || password.value == "") {
     alert("Empty");
+    return false;
+  } else {;
+    true;
+  }
+}
+
+//Sign up page
+
+const email1 = document.querySelector(".email");
+const password1 = document.querySelector(".password");
+const confirm_password = document.querySelector("#confirm-password");
+
+function validate1() {
+  if (email1.value == "" || password1.value == "") {
+    alert("Empty");
+    return false;
+  } else if (password1.value != confirm_password.value) {
+    alert("Wrong password");
     return false;
   } else {
     true;

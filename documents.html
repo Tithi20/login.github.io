@@ -43,36 +43,38 @@
           <h2 class="title">Upload the Documents</h2>
           <div class="form-group">
             <label for="email"
-              >Class X Marksheet <span id="required">*</span></label
+              >Class X Marks <span id="required">*</span></label
             >
-            <div class="input-group">
-              <input type="file" id="X_marksheet" required />
+            <div class="range">
+              <input type="radio" id="50" name="X_range" value="50" required />
+              <label style="padding-right: 10px" for="50">40%-60%</label>
+              <input type="radio" id="60" name="X_range" value="60" />
+              <label style="padding-right: 10px" for="60">61%-80%</label>
+              <input type="radio" id="60" name="X_range" value="60" />
+              <label for="60">81%-100%</label>
             </div>
           </div>
+
           <div class="form-group">
             <label for="password"
-              >Class X Pass Certificate<span id="required">*</span></label
+              >Class XII Marks<span id="required">*</span></label
             >
-            <div class="input-group">
-              <input type="file" id="X_certificate" required />
+            <div class="range">
+              <input
+                type="radio"
+                id="50"
+                name="XII_range"
+                value="50"
+                required
+              />
+              <label style="padding-right: 10px" for="50">40%-60%</label>
+              <input type="radio" id="60" name="XII_range" value="60" />
+              <label style="padding-right: 10px" for="60">61%-80%</label>
+              <input type="radio" id="60" name="XII_range" value="60" />
+              <label for="60">81%-100%</label>
             </div>
           </div>
-          <div class="form-group">
-            <label for="password"
-              >Class XII Marksheet<span id="required">*</span></label
-            >
-            <div class="input-group">
-              <input type="file" id="XII_marksheet" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="password"
-              >Class XII Pass Certificate<span id="required">*</span></label
-            >
-            <div class="input-group">
-              <input type="file" id="XII_certificate" required />
-            </div>
-          </div>
+
           <div class="form-group">
             <label for="email"
               >Do you belong to General caste?<span id="required"
@@ -81,12 +83,13 @@
             >
 
             <div>
-              <input type="radio" id="yes" name="caste" value="yes" />
+              <input type="radio" id="yes" name="caste" value="yes" required />
               <label for="yes">Yes</label>
               <input type="radio" id="no" name="caste" value="no" />
               <label for="no">No</label>
             </div>
           </div>
+
           <div class="form-group">
             <label for="email">SC/ST/PwD Certificate</label>
             <div class="input-group">
@@ -99,41 +102,7 @@
               <input type="file" id="OBC" />
             </div>
           </div>
-          <div class="form-group">
-            <label for="email"
-              >Transfer Certificate<span id="required">*</span></label
-            >
-            <div class="input-group">
-              <input type="file" id="transfer" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email"
-              >Character Certificate<span id="required">*</span></label
-            >
-            <div class="input-group">
-              <input type="file" id="character" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email"
-              >Passport Image<span id="required">*</span></label
-            >
-            <div class="input-group">
-              <input type="file" id="image" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email"
-              >Photocopy of Address Proof<span id="required">*</span></label
-            >
-            <p class="help-text">
-              (Aadhar Card/Voter Card/Passport/Driving License)
-            </p>
-            <div class="input-group">
-              <input type="file" id="address" required />
-            </div>
-          </div>
+
           <button type="submit" id="button" class="btn-submit">Upload</button>
         </form>
       </div>

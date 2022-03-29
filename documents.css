@@ -1,9 +1,9 @@
 .body1 {
-  background-color: rgb(134, 192, 175);
+  background-image: url("https://wallpaperaccess.com/full/4893706.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 150vh;
+  min-height: 100vh;
   padding: 0 16px;
 }
 
@@ -25,6 +25,25 @@
 }
 
 .btn-submit:hover {
-  background:  rgb(146, 48, 135);;
+  background: rgb(146, 48, 135);
 }
 
+#dropdown{
+  position: relative;
+}
+.dropdown-menu{
+  position: absolute;
+}
+
+.range{
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid var(--dark-grey);
+  background-color: rgb(238, 238, 245);
+  width: 100%;
+  transition: all 0.3s ease;
+  padding: 10px;
+
+
+  text-align: center;
+}

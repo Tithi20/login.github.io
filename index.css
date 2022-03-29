@@ -37,7 +37,8 @@ a:hover {
 }
 
 .body1 {
-  background-color: var(--one-red);
+  /* background-color: var(--one-red); */
+  background-image: url("https://wallpaperaccess.com/full/4893706.jpg");
   display: flex;
   justify-content: center;
   align-items: center;

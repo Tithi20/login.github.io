@@ -43,6 +43,7 @@
           onsubmit="return validate()"
           action="documents.html"
           class="login active"
+          id="form_id"
         >
           <h2 class="title">Login with your account</h2>
           <div class="form-group">
@@ -66,6 +67,39 @@
             <span class="help-text">At least 8 characters</span>
           </div>
 
+          <!-- login as a 10th student or college -->
+          <div class="form-group">
+            <label for="email"
+              >Logging in as a
+              <span style="color: red" id="required">*</span></label
+            >
+
+            <div>
+              <input
+                type="radio"
+                id="tenth"
+                name="student"
+                value="tenth"
+                required
+              />
+              <label for="tenth">10th</label>
+              <input
+                type="radio"
+                id="undergraduate"
+                name="student"
+                value="undergraduate"
+              />
+              <label for="undergraduate">Undergraduate</label>
+              <input
+                type="radio"
+                id="graduate"
+                name="student"
+                value="graduate"
+              />
+              <label for="graduate">Graduate</label>
+            </div>
+          </div>
+
           <button type="submit" class="btn-submit" id="button">Login</button>
 
           <a href="password.html">Forgot Password?</a>
@@ -75,12 +109,22 @@
           </p>
         </form>
 
-        <form action="#" class="register">
+        <form
+          onsubmit="return validate1()"
+          action="documents.html"
+          class="register"
+        >
           <h2 class="title">Sign Up</h2>
           <div class="form-group">
             <label for="email">Email</label>
             <div class="input-group">
-              <input type="email" id="email" placeholder="Email address" />
+              <input
+                required
+                class="email"
+                type="email"
+                id="email"
+                placeholder="Email address required"
+              />
               <i class="bx bx-envelope"></i>
             </div>
           </div>
@@ -88,7 +132,12 @@
           <div class="form-group">
             <label for="username">Username</label>
             <div class="input-group">
-              <input type="text" id="username" placeholder="Type username" />
+              <input
+                type="text"
+                id="username"
+                placeholder="Type username"
+                required
+              />
             </div>
           </div>
 
@@ -99,7 +148,9 @@
                 type="password"
                 pattern=".{8,}"
                 id="password"
+                class="password"
                 placeholder="password"
+                required
               />
               <i class="bx bx-lock-alt"></i>
             </div>
@@ -110,6 +161,7 @@
             <label for="confirm-password">Confirm Password</label>
             <div class="input-group">
               <input
+                required
                 type="password"
                 id="confirm-password"
                 placeholder="Confirm password"
@@ -117,6 +169,39 @@
               <i class="bx bx-lock-alt"></i>
             </div>
             <span class="help-text">Confirm Password</span>
+          </div>
+
+          <!-- Singn up as a 10th student or college -->
+          <div class="form-group">
+            <label for="email"
+              >Signing up as a
+              <span style="color: red" id="required">*</span></label
+            >
+
+            <div>
+              <input
+                type="radio"
+                id="tenth1"
+                name="student"
+                value="tenth"
+                required
+              />
+              <label for="tenth1"> 10th</label>
+              <input
+                type="radio"
+                id="undergraduate1"
+                name="student"
+                value="undergraduate"
+              />
+              <label for="undergraduate1">Undergraduate</label>
+              <input
+                type="radio"
+                id="graduate1"
+                name="student"
+                value="graduate"
+              />
+              <label for="graduate1">Graduate</label>
+            </div>
           </div>
           <button type="submit" class="btn-submit">Sign Up</button>
 
