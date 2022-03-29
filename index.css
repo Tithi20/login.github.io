@@ -15,7 +15,7 @@
   --light-green: #bdffac;
 
   --red: #fe2727;
-  --one-red:rgb(228, 142, 142);
+  --one-red: rgb(228, 142, 142);
 
   --light-red: #ffd2d2;
 
@@ -48,6 +48,9 @@ a:hover {
 .container {
   max-width: 500px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
