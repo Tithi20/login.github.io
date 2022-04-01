@@ -1,11 +1,18 @@
+const otp = document.querySelector("#code1");
+const error = document.querySelector("#error");
+
 function validate() {
+  console.log(otp);
   const email = document.querySelector("#email");
 
   if (email.value == "") {
     alert("Empty");
     return false;
+  } else if (otp.value != "1234") {
+    error.innerHTML = "Wrong code";
+    return false;
   } else {
-    true;
+    return true;
   }
 }
 

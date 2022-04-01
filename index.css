@@ -37,8 +37,8 @@ a:hover {
 }
 
 .body1 {
-  /* background-color: var(--one-red); */
-  background-image: url("https://wallpaperaccess.com/full/4893706.jpg");
+background-color: #f8ecec;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +96,22 @@ form.active {
   border: 1px solid var(--dark-grey);
   width: 100%;
   transition: all 0.3s ease;
+}
+.range {
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid var(--dark-grey);
+  background-color: rgb(238, 238, 245);
+  width: 100%;
+  transition: all 0.3s ease;
+  padding: 10px;
+
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+  color: red;
 }
 /* Validation*/
 

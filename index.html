@@ -26,30 +26,32 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="./back.jpg"
+            src="./logo 1.png"
             alt=""
-            width="30"
-            height="24"
+            width="100"
+            height=""
             class="d-inline-block align-text-top"
           />
-          OpGuru
         </a>
       </div>
     </nav>
 
     <div class="body1">
       <div class="container">
-        <form
-          onsubmit="return validate()"
-          action="documents.html"
-          class="login active"
-          id="form_id"
-        >
+        <form onsubmit="return validate()" class="login active" id="form_id">
           <h2 class="title">Login with your account</h2>
+
+          <p id="error" class="error"></p>
+
           <div class="form-group">
             <label for="email">Email</label>
             <div class="input-group">
-              <input type="email" id="email" placeholder="Email address" />
+              <input
+                required
+                type="email"
+                id="email"
+                placeholder="Email address"
+              />
               <i class="bx bx-envelope"></i>
             </div>
           </div>
@@ -57,6 +59,7 @@
             <label for="password">Password</label>
             <div class="input-group">
               <input
+                required
                 type="password"
                 pattern=".{8,}"
                 id="password"
@@ -67,36 +70,38 @@
             <span class="help-text">At least 8 characters</span>
           </div>
 
-          <!-- login as a 10th student or college -->
           <div class="form-group">
-            <label for="email"
-              >Logging in as a
-              <span style="color: red" id="required">*</span></label
-            >
+            <label for="email">Logging in as<span id="required">*</span></label>
 
-            <div>
+            <div class="range">
               <input
+                style="padding-right: 10px"
                 type="radio"
-                id="tenth"
-                name="student"
-                value="tenth"
+                id="eight"
+                name="caste"
+                value="yes"
                 required
+                onchange="validation()"
               />
-              <label for="tenth">10th</label>
+              <label for="eight">Upto class 8</label>
               <input
+                style="padding-right: 10px"
                 type="radio"
-                id="undergraduate"
-                name="student"
-                value="undergraduate"
+                id="ten"
+                name="caste"
+                value="no"
+                onchange="validation()"
               />
-              <label for="undergraduate">Undergraduate</label>
+              <label for="ten">Class 9-10</label>
               <input
+                style="padding-right: 10px"
                 type="radio"
-                id="graduate"
-                name="student"
-                value="graduate"
+                id="twelve"
+                name="caste"
+                value="no"
+                onchange="validation()"
               />
-              <label for="graduate">Graduate</label>
+              <label for="twelve">Class 11-12</label>
             </div>
           </div>
 
@@ -109,12 +114,18 @@
           </p>
         </form>
 
+        <!-- Sign Up form -->
+
         <form
           onsubmit="return validate1()"
-          action="documents.html"
+          action="ten.html"
           class="register"
+          id="form_id1"
         >
           <h2 class="title">Sign Up</h2>
+
+          <p id="error1" class="error"></p>
+
           <div class="form-group">
             <label for="email">Email</label>
             <div class="input-group">
@@ -171,38 +182,41 @@
             <span class="help-text">Confirm Password</span>
           </div>
 
-          <!-- Singn up as a 10th student or college -->
           <div class="form-group">
-            <label for="email"
-              >Signing up as a
-              <span style="color: red" id="required">*</span></label
-            >
+            <label for="email">Logging in as<span id="required">*</span></label>
 
-            <div>
+            <div class="range">
               <input
+                style="padding-right: 10px"
                 type="radio"
-                id="tenth1"
-                name="student"
-                value="tenth"
+                id="eight1"
+                name="caste"
+                value="yes"
                 required
+                onchange="validation1()"
               />
-              <label for="tenth1"> 10th</label>
+              <label for="eight">Upto class 8</label>
               <input
+                style="padding-right: 10px"
                 type="radio"
-                id="undergraduate1"
-                name="student"
-                value="undergraduate"
+                id="ten1"
+                name="caste"
+                value="no"
+                onchange="validation1()"
               />
-              <label for="undergraduate1">Undergraduate</label>
+              <label for="ten">Class 9-10</label>
               <input
+                style="padding-right: 10px"
                 type="radio"
-                id="graduate1"
-                name="student"
-                value="graduate"
+                id="twelve1"
+                name="caste"
+                value="no"
+                onchange="validation1()"
               />
-              <label for="graduate1">Graduate</label>
+              <label for="twelve">Class 11-12</label>
             </div>
           </div>
+
           <button type="submit" class="btn-submit">Sign Up</button>
 
           <p>
@@ -218,5 +232,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script></script>
   </body>
 </html>
